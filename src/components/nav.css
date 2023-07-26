@@ -1,0 +1,26 @@
+/* nav.css */
+
+.nav-container {
+    background-color: #f0f0f0; /* Change this to set the background color of the navbar */
+    padding: 10px;
+  }
+  
+  .nav-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-container li {
+    margin: 0 10px; /* Adjust this to set the spacing between each list item */
+    cursor: pointer;
+  }
+  
+  /* Optional: Style the links */
+  .nav-container li:hover {
+    text-decoration: underline;
+    /* Add any other hover styles you want */
+  }
+  
