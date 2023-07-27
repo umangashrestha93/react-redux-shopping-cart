@@ -1,9 +1,14 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import './cart.css'
+import { remove } from '../Redux/cartSlice'
 
 function Cart() {
   const cardItem = useSelector((state)=>state.cart)
+  const dispatch = useDispatch()
+  const handleRemove = (id)=>{
+    dispatch(remove(id))
+  }
   return (
     <div className='cardWrapper'>
       {
@@ -12,7 +17,7 @@ function Cart() {
             <img src={item.image} alt='img'/>
             <h5>{item.title}</h5>
             <h5>{item.price}</h5>
-            <button className='btn-1'>remove</button>
+            <button className='btn-1' onClick={()=>handleRemove(item.id)}>remove</button>
           </div>
         ))
       }
