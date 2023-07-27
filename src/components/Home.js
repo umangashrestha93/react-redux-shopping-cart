@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './home.css'; 
+import { add } from '../Redux/cartSlice';
+import { useDispatch } from 'react-redux';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch()
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -13,6 +16,10 @@ const Home = () => {
     fetchProduct();
   }, []);
 
+  const handleAdd=(product)=>{
+    dispatch(add(product))
+  }
+
   return (
     <div className="grid-container">
       {products.map((product) => (
@@ -20,7 +27,7 @@ const Home = () => {
           <img src={product.image} alt="img" />
           <h4>{product.title}</h4>
           <h5>{product.price}</h5>
-          <button className="btn">add to cart</button>
+          <button className="btn" onClick={()=>handleAdd(product)}>add to cart</button>
         </div>
       ))}
     </div>
