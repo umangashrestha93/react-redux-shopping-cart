@@ -1,0 +1,38 @@
+/* Styling for the cardWrapper div */
+.cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Styling for each cardItem div */
+  .cardItem {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .cardItem img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cardItem h5 {
+    margin: 10px 0;
+  }
+  
+  .cardItem button {
+    padding: 8px 16px;
+    background-color: #353232;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cardItem button:hover {
+    background-color: #000000;
+  }
+  

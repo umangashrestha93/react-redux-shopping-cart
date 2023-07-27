@@ -1,8 +1,10 @@
-/* nav.css */
+
 
 .nav-container {
-    background-color: #f0f0f0; /* Change this to set the background color of the navbar */
-    padding: 10px;
+  position: fixed;
+    background-color: #4f4d4d; 
+    width: 100%;
+    padding: 20px;
   }
   
   .nav-container ul {
@@ -14,13 +16,17 @@
   }
   
   .nav-container li {
-    margin: 0 10px; /* Adjust this to set the spacing between each list item */
+    margin: 0 30px; 
     cursor: pointer;
+    color: white;
   }
   
-  /* Optional: Style the links */
   .nav-container li:hover {
     text-decoration: underline;
-    /* Add any other hover styles you want */
+
+  }
+  span{
+    color: white;
+    margin: 0 30px;
   }
   

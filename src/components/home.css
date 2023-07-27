@@ -33,7 +33,7 @@
   }
   
   .btn {
-    background-color: #007bff; /* Change this to set the background color of the button */
+    background-color: #353232; /* Change this to set the background color of the button */
     color: #fff; /* Change this to set the text color of the button */
     border: none;
     border-radius: 5px;
@@ -43,6 +43,6 @@
   }
   
   .btn:hover {
-    background-color: #0056b3; /* Change this to set the hover background color of the button */
+    background-color: #000000; /* Change this to set the hover background color of the button */
   }
   
